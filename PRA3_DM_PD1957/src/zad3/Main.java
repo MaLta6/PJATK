@@ -1,3 +1,18 @@
+/*
+Stworzyć tabelę (JTable), pokazującą książki.
+Książka ma:
+•	autora
+•	tytul
+•	cenę
+•	okładkę (obrazek)
+ 
+Informacja o książkach ma być wczytana z pliku. (a obrazki z plkiów graficznych  z tego samego katalogu)
+Należy zapewnić:
+•	możliwość edycji cen w tabeli (w komórce)
+•	możlwiość dodawania i usuwania wierszy do/z  tabeli z poziomu GUI.
+
+*/
+
 package zad3;
 
 
@@ -44,11 +59,11 @@ class Book {
 	//private JLabel lab;
 	
 	
-	/** Konstruktor tworz�cy
+	/** Konstruktor tworz¹cy
 	 * @param author autor
-	 * @param title tuty� ksi��ki
-	 * @param price cena ksi��ki
-	 * @param JLabel ok�adka ksi��ki
+	 * @param title tuty³ ksi¹¿ki
+	 * @param price cena ksi¹¿ki
+	 * @param JLabel ok³adka ksi¹¿ki
 	 */
 	public Book(String author, String title, double price){
 			//, JLabel lab) {
@@ -274,7 +289,7 @@ class JTableDemo extends JFrame {
 	private JMenuItem					mnuFileOpen, mnuFileSave, mnuFileExit;	
 
 	public static final String[] columnNames = {
-        "Autor", "Tytu�", "Cena","Okladka",""
+        "Autor", "Tytu³", "Cena","Okladka",""
     };
 	
 	public JTableDemo() {		
@@ -306,17 +321,17 @@ class JTableDemo extends JFrame {
             tableModel.addEmptyRow();
         }
         
-        // obs�uga usuwania - przez klikni�cie myszk� z przyci�ni�tym Alt'em
+        // obs³uga usuwania - przez klikniêcie myszk¹ z przyciœniêtym Alt'em
         table.addMouseListener( new MouseAdapter() {
 			
 			@Override
 			public void mouseClicked(MouseEvent e) {
 				
 				if (
-						// wymagane wci�ni�cie ALT'a
+						// wymagane wciœniêcie ALT'a
 						e.isAltDown() 
 						
-						// zabezpieczenie przed pr�b� usuwania z pustej listy lub spoza listy
+						// zabezpieczenie przed prób¹ usuwania z pustej listy lub spoza listy
 						&& table.getSelectedRow() >= 0
 						) 
 				{
@@ -339,7 +354,7 @@ class JTableDemo extends JFrame {
         mnuBar = new JMenuBar();
         mnuFile = new JMenu("Plik");
         mnuFile.setMnemonic(KeyEvent.VK_P);
-        mnuFileOpen = new JMenuItem("Otw�rz");
+        mnuFileOpen = new JMenuItem("Otwórz");
         mnuFileOpen.addActionListener( new ActionListener() {
 
 			@Override
@@ -442,7 +457,7 @@ class JTableDemo extends JFrame {
 			}
         	
         });
-        mnuFileExit = new JMenuItem("Wyj�cie");
+        mnuFileExit = new JMenuItem("Wyjœcie");
         mnuFileExit.setMnemonic(KeyEvent.VK_W);
         mnuFileExit.setAccelerator(KeyStroke.getKeyStroke("control X"));
         mnuFileExit.addActionListener( new ActionListener() {
