@@ -1,7 +1,62 @@
 /**
  *
  *  @author Dylewska Marta PD1957
- *
+ *Prosty edytor
+
+
+Stworzyć prosty edytor tekstu z opcjami umieszczonymi w menu rozwijalnym 
+File 
+    Open - otwiera plik wybrany w dialogu wyboru plików i wczytuje plik do edytora
+    Save - zapisuje zawartość edytora do bieżącego pliku (jeśli nie ma pliku, to dialog wyboru plików)
+    Save As... zapisuje zawartość do pliku wybranego z dialogu
+    Exit   - zamknięcie okna i zakończenie działania aplikacji 
+
+Edit 
+
+   Adresy 
+        Dom      - dopisuje do edytora w miejscu kursora adres domowy 
+        Szkoła    - dopisuje do edytora w miejscu kursora adres szkoły 
+        Firma     - dopisuje do edytora w miejscu kursora adres służbowy
+Options 
+    Foreground     - zmienia kolor pisma na wybraną opcję 
+           kolor1 
+           ... 
+           kolorN 
+    Background    - zmienia kolor tła na wybraną opcję 
+          kolor1 
+          ... 
+          kolorN 
+    Font size          - zmienia rozmiar pisma na wybraną opcję 
+                8 
+              10 
+               ... 
+              24
+Zapewnić:
+•	mnemoniki i akceleratory dla opcji Open, Save, Save As..., Exit, Dom, Szkoła, Firma
+•	pokazywanie kolorów w opcjach wyboru koloru (tła i pierwszego planu) w postaci kolorowych kółek
+•	pokazywanie nazwy edytowanego pliku na pasku tytułu (jeślie nie ma pliku - "bez tytułu"),
+•	dialog wyboru pliku ma się otwierać w ostatnio odwiedzonym katalogu; na początku ma to być bieżący katalog.
+
+Przykład realizacji. 
+ 
+Wygląd edytora - menu File (warto zwrócić uwagę na separator - czerwoną kreskę - jak ją zrobić???) 
+ 
+ 
+Po otwarciu menu Adresy (jak widać wcześniej został wczytany plik - jego nazwa jest na pasku tytułu; zauważmy też, że wszędzie opcje menu są "wypukłe" - mają kształt przycisków - jak to zrobić ?):
+ 
+
+Po wyborze opcji szkoła widoczny dopisany tekst z adresem )zostal dopisany w miejscu kursora - jak to zrobić?). Otwarte menu Background (menu Foreground jest takie samo):
+
+ 
+
+ Otwarte menu Font size :
+ 
+ 
+ 
+Uwagi:
+•	łatwe umieszczenie kolorów = własna klasa implementująca Icon
+•	należy napisać kilka metod uniwersalnych (np. tworzące opcje menu z zadanymi charakterystykami), w przeciwnym razie kod będzie duży i słabo czytelny
+
  */
 
 package zad4;
