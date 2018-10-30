@@ -1,7 +1,15 @@
 /**
  *
  *  @author Dylewska Marta PD1957
- *
+ * Uzyska膰 komponenty i rozk艂ad jak na poni偶szym rysunku:
+ 
+ Uwaga:
+
+1.	przyciski A1-A3 s膮 wyr贸wnane w lewo i nie zmieniaj膮 swoich rozmiar贸w,
+2.	przyciski B1-B3 s膮 wyr贸wnane w prawo i nie zmieniaj膮 swoich rozmiar贸w,
+3.	przyciski numeryczne nie zmieniaj膮 swoich rozmiar贸w,
+4.	pola tekstowe (JTextField) mog膮 zmienia膰 swoje rozmiary i po艂o偶enie.
+
  */
 
 package zad2;
@@ -17,19 +25,19 @@ public class Main {
         JFrame frame = new JFrame();
  
         frame.setLayout(new BorderLayout(2,2));
- //panel na g髍ze po lewej stronie
+ //panel na g贸rze po lewej stronie
         JPanel panelTL = new JPanel();
         panelTL.setLayout(new FlowLayout(FlowLayout.LEFT));
         panelTL.add(new JButton("A1"));
         panelTL.add(new JButton("A2"));
         panelTL.add(new JButton("A3"));
- //panel na g髍ze po prawej stronie
+ //panel na g贸rze po prawej stronie
         JPanel panelTR = new JPanel();
         panelTR.setLayout(new FlowLayout(FlowLayout.RIGHT));
         panelTR.add(new JButton("B1"));
         panelTR.add(new JButton("B2"));
         panelTR.add(new JButton("B3"));
- //g髍ny panel zawieraj筩y obydwa panele
+ //g贸rny panel zawieraj鹿cy obydwa panele
         JPanel panelTopContainer = new JPanel();
         panelTopContainer.setLayout(new GridLayout(1, 2));
         panelTopContainer.add(panelTL);
