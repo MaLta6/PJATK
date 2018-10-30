@@ -1,7 +1,14 @@
 /**
  *
  *  @author Dylewska Marta PD1957
- *
+ *Stworzyć JListę, pokazująca informacje o temperaaturze w postaci: 
+
+k stopni C = f stopni F 
+
+gdzie k zmienia się od -70 do +60. 
+
+Uwaga: nie wolno używać tablic ani kolekcji (w tym DefaultListModel, który pod spodem kporzysta z klasy Vector). 
+
  */
 
 package zad1;
