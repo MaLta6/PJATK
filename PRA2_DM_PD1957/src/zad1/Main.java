@@ -1,7 +1,16 @@
 /**
  *
  *  @author Dylewska Marta PD1957
- *
+ *Właściwości komponentów ( 2 p.)
+
+Rozmieścić w oknie  pięć etykiet w układzie BorderLayout.
+Etykiety powinny mieć:
+a) różne kolory tła,
+b) różne kolory pisma,
+c) różne wielkości pisma i różne teksty,
+d) podpowiedzi (tooltip)
+c) różne ramki 
+
  */
 
 package zad1;
