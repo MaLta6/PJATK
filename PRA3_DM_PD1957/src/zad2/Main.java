@@ -1,7 +1,11 @@
 /**
  *
  *  @author Dylewska Marta PD1957
- *
+ * W oknie jest: JTextField i JList . 
+
+Wpisanie tekstu w JTextField i wciśnięcie Enter powoduje wstawienie tekstu na listę.
+Zaznaczone elementy mogą być z listy usuwane przez alt-kliknięcie na liście. 
+
  */
 
 package zad2;
