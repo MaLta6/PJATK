@@ -1,7 +1,9 @@
 /**
  *
  *  @author Dylewska Marta PD1957
- *
+ *Przycisk umieszczony w oknie zmienia kolory swojego tÅ‚a na skutek klikniÄ™Ä‡ 
+UstaliÄ‡ dowolnÄ… sekwencjÄ™ kolorÃ³w, po jej wyczerpaniu zaczÄ…Ä‡ od pierwszego 
+
  */
 package zad3;
 
@@ -31,18 +33,18 @@ public class Main {
 		
 		        button = new JButton("Klik!");
 		        
-		//w celu obs³u¿enia zdarzenia stosujemy klasê
+		//w celu obsÂ³uÂ¿enia zdarzenia stosujemy klasÃª
 		//ActionListener
 		        button.addActionListener(new ActionListener() {
 		            @Override
-		//pokazuje co siê dzieje jeœli u¿ytkownik wykona jakieœ dzia³anie
+		//pokazuje co siÃª dzieje jeÅ“li uÂ¿ytkownik wykona jakieÅ“ dziaÂ³anie
 		            public void actionPerformed(ActionEvent e) {
 		                if (colorKey >= colors.length) {
 		                    colorKey = 0;
 		                }
-		//zwiêkszamy colorKey dopóki nie jest wiêkszy lub równy
-		//d³ugoœci macierzy kolorów
-		//wtedy wracamy do pocz¹tku macierzy (czyli colorKey=0)
+		//zwiÃªkszamy colorKey dopÃ³ki nie jest wiÃªkszy lub rÃ³wny
+		//dÂ³ugoÅ“ci macierzy kolorÃ³w
+		//wtedy wracamy do poczÂ¹tku macierzy (czyli colorKey=0)
 		                button.setBackground(colors[colorKey]);
 		                colorKey++;
 		            }
