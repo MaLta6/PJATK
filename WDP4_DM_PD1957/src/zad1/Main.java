@@ -1,7 +1,38 @@
 /**
  *
  *  @author Dylewska Marta PD1957
- *
+ *Napisać program, który pobiera w dialogu wejściowym showInputDialog  łańcuch znakowy i:
+1.	podaje na konsoli długość łańcucha, 
+2.	wyprowadza pierwszy i ostatni znak (rozdzielone spacją) 
+3.	wyprowadza podłańcuch od 4 znaku do ostatniego znaku, 
+4.	wyprowadza podłańcuch od 4 znaku do przedostatniego znaku, 
+5.	wyprowadza informacje o tym ile razy w wejściowym łańcuchu występuje zadany (podany w drugim dialogu wejściowymshowInputDialog)  podłańcuch (np. ile razy w łańcuchu "podstoleczne tramwaje mialy postoje po sto razy dziennie" wystepuje podlancuch "sto" - w tym przypadku 3) 
+6.	tworzy tablicę wszystkich słów  łańcucha (tu slowa niech oznaczają zestawy znaków rozdzielone spacjami, przecinkami, kropkami i średnikami) i wyprowadza jej elementy w jednym wierszu, rozdzielone jedną spacją 
+7.	stwierdzia czy pierwsze i ostatnie słowo łańcucha jest takie samo. 
+Działanie programu winno wyglądać w następujący sposób.
+- w dialogu wejściwym podajemy napis np. "ala ma kota, ale ala nie ma psa; kota ma ala"
+-  w dialogu wejściowym podajemy szukany tekst np. "al"
+
+Dla podanych przykładowych danych na konsoli powinniśmy uzyskać wynik:
+
+
+1) 44
+2) a a
+3)  ma kota, ale ala nie ma psa; kota ma ala
+4)  ma kota, ale ala nie ma psa; kota ma al
+5) 4
+6) ala ma kota ale ala nie ma psa kota ma ala
+7) true
+
+Sposób działania programu i forma wydruku są obowiązkowe (proszę zwrócić uwagę na wyprowadzanie numeracji kolejnych punktów zadania na wydruku oraz na to w jaki sposób podawane sa wynik).
+
+
+Punktacja:
+1-4 = 1 punkt
+5 = 2 punkty
+6-7 = 2 punkty
+
+
  */
 
 package zad1;
